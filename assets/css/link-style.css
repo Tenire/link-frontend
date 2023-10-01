@@ -1,0 +1,31 @@
+a, a:focus, a:hover
+{
+    color: #842029;
+    text-decoration: underline;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a.page-link, span.page-link, a.page-link:hover, span.page-link:hover
+{
+    color: #842029;
+    text-decoration: none;
+}
+
+.bg-link
+{
+    background: #842029;
+}
+
+.file-list > tbody > tr > td
+{
+    max-width: 360px;
+    min-width: 80px;
+    min-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}

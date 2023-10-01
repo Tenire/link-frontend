@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>木极直链网盘</title>
+    <link rel="icon" type="image/x-icon" href="https://www.tenire.com/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/link-style.css">
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-link">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#">木极直链网盘</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="fa fa-list"></i> 文件列表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="fa fa-upload"></i> 上传文件</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="fa fa-info"></i> 关于</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white"><i class="fa fa-folder-open"></i> 我的文件</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white"><i class="fa fa-sign-in"></i> 登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="card shadow my-4">
+        <div class="card-header">
+            <h2 class="card-title">文件列表
+                <div class="float-right col-md-6">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="搜索...">
+                        <div class="input-group-append">
+                            <button id="searchButton" class="btn btn-primary" type="button">搜索</button>
+                        </div>
+                    </div>
+                </div>
+            </h2>
+        </div>
+        <div class="card-body table-responsive">
+            <table id="main-file" class="table table-striped table-hover file-list">
+                <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>操作</th>
+                    <th>文件名</th>
+                    <th>文件大小</th>
+                    <th>文件格式</th>
+                    <th>上传时间</th>
+                    <th>上传者IP</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="file-info col-md-5 mx-4">
+                共有 100 个文件&nbsp;&nbsp;当前第 1 页，共 10 页
+            </div>
+            <div class="col-md-6">
+                <nav id="page-nav">
+                    <ul class="pagination pagination-sm" style="float:right;">
+                        <li class="page-item disabled">
+                            <span class="page-link">首页</span>
+                        </li>
+                        <li class="page-item disabled">
+                            <span class="page-link">&laquo;</span>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link">&raquo;</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link">尾页</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2023 <a href="https://yourwebsite.com" target="_blank">木极直链网盘</a>. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
